@@ -1,13 +1,13 @@
 <testsuite tests="11">
-  <testcase classname="FlowCollectionItemFinder_Test" name="testGetSObjectById" time="55" />
-  <testcase classname="FlowCollectionItemFinder_Test" name="testRecordNotFound" time="6" />
-  <testcase classname="FlowGetFirstSObject_Test" name="testGetFirstSObject" time="46" />
-  <testcase classname="FlowGetFirstSObject_Test" name="testGetFirstSObjectFromEmptyList" time="8" />
-  <testcase classname="FlowStringSeparator_Test" name="parseCommaSeparatedString" time="41" />
-  <testcase classname="FlowStringSeparator_Test" name="parseEmptyString" time="7" />
-  <testcase classname="FlowStringSeparator_Test" name="parseSemiColonSeparatedString" time="7" />
-  <testcase classname="FlowStringSeparator_Test" name="parseSingleString" time="8" />
+  <testcase classname="FlowCollectionItemFinder_Test" name="testGetSObjectById" time="46" />
+  <testcase classname="FlowCollectionItemFinder_Test" name="testRecordNotFound" time="5" />
+  <testcase classname="FlowGetFirstSObject_Test" name="testGetFirstSObject" time="25" />
+  <testcase classname="FlowGetFirstSObject_Test" name="testGetFirstSObjectFromEmptyList" time="4" />
+  <testcase classname="FlowStringSeparator_Test" name="parseCommaSeparatedString" time="29" />
+  <testcase classname="FlowStringSeparator_Test" name="parseEmptyString" time="6" />
+  <testcase classname="FlowStringSeparator_Test" name="parseSemiColonSeparatedString" time="6" />
+  <testcase classname="FlowStringSeparator_Test" name="parseSingleString" time="6" />
   <testcase classname="FlowStringSeparator_Test" name="parseStringWithOddSpacing" time="7" />
-  <testcase classname="FlowStringSeparator_Test" name="parseStringWithWhitespace" time="8" />
-  <testcase classname="FlowStringSeparator_Test" name="testNullInputString" time="8" />
+  <testcase classname="FlowStringSeparator_Test" name="parseStringWithWhitespace" time="7" />
+  <testcase classname="FlowStringSeparator_Test" name="testNullInputString" time="7" />
 </testsuite>

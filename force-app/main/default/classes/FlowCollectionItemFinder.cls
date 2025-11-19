@@ -2,14 +2,15 @@
  * @description Return an sobject from a collection of sobjects in flow
  * @date 2024
  **************************************************************/
-public with sharing class FlowCollectionItemFinder {
+global with sharing class FlowCollectionItemFinder {
 
     @InvocableMethod(
         label='Get sObject by Record Id' 
+        description='Get an sObject in a collection by its record id'
         category='Utilities' 
         iconName='resource:asgr__agGlyph:Layer_1'
     )
-    public static List<Result> getSObjectById(List<Request> requests) {
+    global static List<Result> getSObjectById(List<Request> requests) {
         List<Result> results = new List<Result>();
 
         for (Request req : requests) {
@@ -25,17 +26,17 @@ public with sharing class FlowCollectionItemFinder {
         return results;
     }
 
-    public class Request {
+    global class Request {
         @InvocableVariable(label='Collection')
-        public List<SObject> collection;
+        global List<SObject> collection;
 
         @InvocableVariable(label='Record Id')
-        public Id recordId;
+        global Id recordId;
     }
 
-    public class Result {
+    global class Result {
         @InvocableVariable(label='Record')
-        public SObject record;
+        global SObject record;
     }
 
 }

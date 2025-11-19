@@ -2,7 +2,7 @@
  * @description Parse a string into a collection of strings
  * @date 2025
  *******************************************************************************/
-public with sharing class FlowStringSeparator {
+global with sharing class FlowStringSeparator {
     
     @InvocableMethod(
         label='Parse Text' 
@@ -10,7 +10,7 @@ public with sharing class FlowStringSeparator {
         category='Utilities'
         iconName='resource:asgr__agGlyph:Layer_1'
     )
-    public static List<Result> parseText(List<Request> requests) {
+    global static List<Result> parseText(List<Request> requests) {
         List<Result> results = new List<Result>();
         for (Request req : requests) {
             Result result = new Result();
@@ -27,16 +27,16 @@ public with sharing class FlowStringSeparator {
         return results;
     }
 
-    public class Request {
+    global class Request {
         @InvocableVariable(label='String to Separate')
-        public String inputString;
+        global String inputString;
         @InvocableVariable(label='Separator')
-        public String separator;
+        global String separator;
     }
 
-    public class Result {
+    global class Result {
         @InvocableVariable(label='Collection of Strings')
-        public List<String> stringCollection;
+        global List<String> stringCollection;
     }
 
 }
